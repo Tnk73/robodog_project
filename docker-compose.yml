@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ros2_env:
+    build: .
+    container_name: my_ros2_container
+    volumes:
+      # 手元のPCのコードと、Dockerの中を繋ぐ設定
+      - .:/ros2_ws
+    tty: true
