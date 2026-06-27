@@ -1,3 +1,0 @@
-VScodeでフォルダ開いて、ターミナルに
-docker compose up -d       # 部屋を起動する
-docker compose exec ros2_env bash  # 部屋の中に入る

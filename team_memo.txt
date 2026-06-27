@@ -1,0 +1,17 @@
+起動するとき
+VScodeでフォルダ開いて、ターミナルに
+docker compose up -d       # 部屋を起動する
+docker compose exec ros2_env bash  # 部屋の中に入る
+
+# 1. 名前の変更（とお掃除）をGitに認識させる
+git add .
+
+# 2. メモを追加したよ、という記録を残す
+git commit -m "チーム共有用のメモファイルを追加"
+
+# 3. これまでの変更（ラズパイ対応の件も含む）をすべてGitHubにアップロード！
+git push
+
+↑の時にエラー起きた時、コンテナ上のターミナルで
+git config --global user.name "あなたの名前"
+git config --global user.email "あなたのメールアドレス"
