@@ -1,3 +1,9 @@
 build/
 install/
 log/
+
+# FreeCAD backups
+*.FCStd[0-9]*
+*.FCBak
+*.bck
+*.swp
